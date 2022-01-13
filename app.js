@@ -67,7 +67,6 @@ document.addEventListener('DOMContentLoaded', () => {
             name: 'wfish',
             img: 'images /wfish.png'
         }
-
     ]
 
 

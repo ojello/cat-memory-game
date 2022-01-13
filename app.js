@@ -5,67 +5,67 @@ document.addEventListener('DOMContentLoaded', () => {
     const cardArray = [
         {
             name: 'fish',
-            img: '../images/fish.png'
+            img: 'images /fish.png'
         },
         {
             name: 'icecream',
-            img: '../images/icecream.png'
+            img: 'images /icecream.png'
         },
         {
             name: 'lift',
-            img: '../images/lift.png'
+            img: 'images /lift.png'
         },
         {
             name: 'lolipop',
-            img: '../images/lolipop.png'
+            img: 'images /lolipop.png'
         },
         {
             name: 'peach',
-            img: '../images/peach.png'
+            img: 'images /peach.png'
         },
         {
             name: 'squish',
-            img: '../images/squish.png'
+            img: 'images /squish.png'
         },
         {
             name: 'uwu',
-            img: '../images/uwu.png'
+            img: 'images /uwu.png'
         },
         {
             name: 'wfish',
-            img: '../images/wfish.png'
+            img: 'images/wfish.png'
         },
         {
             name: 'fish',
-            img: '../images/fish.png'
+            img: 'images /fish.png'
         },
         {
             name: 'icecream',
-            img: '../images/icecream.png'
+            img: 'images /icecream.png'
         },
         {
             name: 'lift',
-            img: '../images/lift.png'
+            img: 'images /lift.png'
         },
         {
             name: 'lolipop',
-            img: '../images/lolipop.png'
+            img: 'images /lolipop.png'
         },
         {
             name: 'peach',
-            img: '../images/peach.png'
+            img: 'images /peach.png'
         },
         {
             name: 'squish',
-            img: '../images/squish.png'
+            img: 'images /squish.png'
         },
         {
             name: 'uwu',
-            img: '../images/uwu.png'
+            img: 'images /uwu.png'
         },
         {
             name: 'wfish',
-            img: '../images/wfish.png'
+            img: 'images /wfish.png'
         }
 
     ]
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
         for (let i = 0; i < cardArray.length; i++) {
             const card = document.createElement('img')
             // linking it to relative path image 'blank'
-            card.setAttribute('src', '../images/fpastel.png')
+            card.setAttribute('src', 'images /fpastel.png')
             // give each image a data-id
             card.setAttribute('data-id', i)
             card.addEventListener('click', flipCard)
@@ -104,24 +104,24 @@ document.addEventListener('DOMContentLoaded', () => {
         const optionTwoId = cardsChosenId[1]
 
         if (optionOneId == optionTwoId) {
-            cards[optionOneId].setAttribute('src', '../images/fpastel.png')
+            cards[optionOneId].setAttribute('src', 'images /fpastel.png')
 
-            cards[optionTwoId].setAttribute('src', '../images/fpastel.png')
+            cards[optionTwoId].setAttribute('src', 'images /fpastel.png')
             alert('Clicked the image twice!')
         }
         else if (cardsChosen[0] === cardsChosen[1]) {
             // if cards match
             alert('you found a match')
-            cards[optionOneId].setAttribute('src', '../images/empty.png')
-            cards[optionTwoId].setAttribute('src', '../images/empty.png')
+            cards[optionOneId].setAttribute('src', 'images /empty.png')
+            cards[optionTwoId].setAttribute('src', 'images /empty.png')
             // remove the click function of the matched pair
             cards[optionOneId].removeEventListener("click", flipCard);
             cards[optionTwoId].removeEventListener("click", flipCard);
             cardsWon.push(cardsChosen)
             // if no match
         } else {
-            cards[optionOneId].setAttribute('src', '../images/fpastel.png')
-            cards[optionTwoId].setAttribute('src', '../images/fpastel.png')
+            cards[optionOneId].setAttribute('src', 'images /fpastel.png')
+            cards[optionTwoId].setAttribute('src', 'images /fpastel.png')
             alert('Not a match, try again!')
         }
         cardsChosen = []

@@ -35,6 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
             name: 'wfish',
             img: 'images /wfish.png'
         },
+
+
         {
             name: 'fish',
             img: 'images /fish.png'
@@ -66,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             name: 'wfish',
             img: 'images /wfish.png'
-        }
+        },
     ]
 
 
